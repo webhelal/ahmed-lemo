@@ -1,5 +1,5 @@
 :root {
-    --min-color: #10cab7;
+    --min-color: #9f10ca;
     --secondary-color: #2c4755;
     --section-padding: 60px;
     --section-background: #e0dbdba6;
@@ -236,7 +236,7 @@ top: 21px; */
 
 .landing .intro_text h1 {
     font-weight: bold;
-    font-size: 86px;
+    font-size: 76px;
     color: #ca104c;
     background-color: #1e707078;
     border-radius: 27px;
@@ -246,6 +246,13 @@ top: 21px; */
     max-width: 100%;
     font-family: 'Acme', sans-serif;
     text-shadow: -13px 14px 17px black;
+}
+
+@media (max-width:767px) {
+    .landing .intro_text h1 {
+        font-size: 46px;
+        background-color: #1daf4938;
+    }
 }
 
 .landing .intro_text p {
@@ -260,6 +267,13 @@ top: 21px; */
     border-radius: 20px;
     text-shadow: 9px 6px 8px black;
     text-transform: capitalize;
+}
+
+@media (max-width:767px) {
+    .landing .intro_text p {
+        font-size: 19px;
+        min-width: 300px;
+    }
 }
 
 
@@ -588,14 +602,14 @@ margin-left: 102px;
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
     margin-top: 40px;
-    margin-bottom: 0%;
+    margin-bottom: 14%;
     height: 400px;
 }
 
 .work-us .container {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .work-us .photos {

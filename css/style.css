@@ -603,37 +603,36 @@ margin-left: 102px;
     background-color: var(--section-background);
     margin-top: 40px;
     margin-bottom: 14%;
-    height: 400px;
+    height: 90vh;
+    overflow: auto;
 }
 
 .work-us .container {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    position: relative;
 }
 
-.work-us .photos {
-    padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
-    background-color: var(--section-background);
-    margin-top: 140px;
-    margin-bottom: 110%;
-    height: 400px;
-    display: grid;
-    margin-top: 175px;
-    margin-left: 20px;
-    display: flex;
+.about-work {
+    margin: 40px;
+    position: absolute;
+    top: 100px;
 }
 
 .work-us .cardd {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    width: calc(100% / 4-60px);
 }
 
-.work-us .photos .cardd img {
-    width: 100%;
+.work-us .cardd img {
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+
+.work-us .cardd:hover img {
+    transform: skew(10deg, 0deg);
 }
 
 
